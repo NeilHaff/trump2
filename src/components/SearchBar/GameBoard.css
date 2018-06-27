@@ -1,0 +1,296 @@
+.GameBoard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-image: url('./trump-flag.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.GifBoxBack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-color: #b61d33;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.GifBoxBack  .ScoreBoard {
+  background-color: rgba(255,255,255,0.7);
+  margin: 15% auto;
+  min-width: 400px;
+  padding: 5px;
+  border: 1px solid #888;
+  width: 50%;
+  align-content: center;
+  height: auto;
+}
+
+.ScoreBoard h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: start;
+  display: inline-block;
+  background-color: rgba(0,40,104);
+  overflow: auto;
+}
+
+
+.OpponentBox {
+  position: relative;
+  width: 25%;
+  background-image: url('./oppcard.png');
+  height:300px;
+  margin-top: 2rem;
+  justify-content: center;
+  min-width: 320px;
+  flex-flow: row wrap;
+  margin-bottom: 2rem;
+}
+
+.OpponentBox .HiddenCard {
+  width: 100%;
+  height: 100%;
+  background-color: #473f3f;
+}
+
+.OpponentBox h2{
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.OpponentBox h3{
+  margin-top: 20px;
+}
+.OpponentBox p{
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+
+.DottedBox_content {
+  position: relative;
+  background-color: rgba(0,40,104,0.7);
+  margin: 1rem 2.3rem .5rem;
+  min-width: 320px;
+  max-width: 400px;
+  height: fit-content;
+  opacity: 1;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-right: 5rem;
+}
+
+.DottedBox_content h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(0,40,104);
+}
+
+
+.DottedBox_content .image-container {
+  max-height: 8rem;
+  min-height: 5rem;
+  max-width: 75%;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DottedBox_content p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: medium;
+  font-weight: lighter;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+
+button {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 50px;
+    margin-bottom: 7px;
+    transition: color(#b61d33) .5s;
+    cursor: pointer;
+}
+button:hover{
+  color: white;
+  background-color: #b61d33;
+}
+
+
+.DottedBox_content h4 {
+  text-align: right;
+  font-size: 1rem;
+  margin-bottom: 3px;
+    color: white;
+  align-items: right;
+}
+
+.DottedBox_content .col-1 {
+  width: 70%;
+  float: left;
+}
+
+.DottedBox_content .col-2 {
+  float: right;
+  width: 30%;
+  align-items: center;
+}
+
+
+.GifBoxBack{
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  background-color: rgb(0,40,104,0.5);
+  margin: 0 auto;
+}
+.GifBoxBack h3{
+  font-size: xx-large;
+  color: deeppink;
+}
+
+.ScoreBoard {
+  background-color:  rgb(0,40,104,1);
+  padding: 5px;
+  border: 1px solid #888;
+  margin-left: 25%;
+  width: auto;
+  align-content: center;
+  height: auto;
+  max-height: 50%;
+  justify-content: center;
+}
+
+.PlayedCard{
+  background-color: rgba(0,40,104,0.7);
+  position: relative;
+  width: 45%;
+  height:auto;
+  padding: 2px, 8px,8px, 8px;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-flow: row wrap;
+  float: left;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 3%;
+}
+
+.MoveBox{
+  width: 40%;
+  border: black;
+  border-width: 2px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.MoveBox H2{
+  background-color: white;
+  color: black;
+}
+
+.OppCard{
+  background-color: rgba(0,40,104,0.7);
+  position: relative;
+  width: 45%;
+  height:auto;
+  padding: 2px, 8px,8px, 8px;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-flow: row wrap;
+  float: right;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 3%;
+}
+
+.ScoreBoard h4{
+   font-size: medium;
+  color: white;
+  align-content: right;
+ }
+
+.ScoreBoard h2{
+  font-size: large;
+  height: auto;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.highlighted {
+  color: white;
+  background-color: #b61d33;
+  font-size: large;
+}
+
+.textBox{
+  width: 300px;
+  height: 300px;
+  background-color: #888888;
+  opacity: 40%;
+  position: fixed;
+  z-index: 1;
+}
+.textBox h2{
+  justify-content: center;
+  align-content: center;
+}
+
+.SearchBar-fields input {
+  width: 21rem;
+  padding: .66rem 1rem;
+  margin-right: 2.22rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: .77rem;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 560px) {
+  .SearchBar {
+    background-image: url('./trump-flag.png');
+  }
+
+
+  .SearchBar-fields {
+    flex-direction: column;
+    align-items: center;
+    background-color: #638ee7;
+  }
+
+}
