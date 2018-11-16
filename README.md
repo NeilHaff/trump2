@@ -1,3 +1,5 @@
-## ravenous
+Trump Top Trumps 
 
-A client-side React application, utilizing the Yelp API to search for local businesses.
+Top Trump Style game using the scandals of Donald Trump. 
+
+Live at http://trumptoptrumps.com
